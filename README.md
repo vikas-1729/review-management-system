@@ -45,7 +45,7 @@ Live at [https://review-management-cbbc5.web.app/](https://review-management-cbb
   1. review : it use to store all information about review i.e one which product which customer etc etc.
   2. customer: it use to store information about customer name etc
   3. product: similar to customer it store info about product
-  4. you can know more about schemas by going to [https://github.com/vikas-1729/server/models/]
+  4. you can know more about schemas by going to [https://github.com/vikas-1729/review-management-system/blob/master/server/model]
   
   # Frontend
    
@@ -59,7 +59,7 @@ Live at [https://review-management-cbbc5.web.app/](https://review-management-cbb
    * create review [https://review-management-system.herokuapp.com/api/v1/review_create] A post request to create review  
    * give approval to review [https://review-management-system.herokuapp.com/api/v1/review_approval] review_approval it is a get request with two parameter _id and status _id is which review and status to know it is approved or not  
    * read review 
-   1 you will get all read review url in [https://github.com/vikas-1729/server/router/api/v1/read.js] 
+   1 you will get all read review url in [https://github.com/vikas-1729/review-management-system/blob/master/server/router/api/v1/read.js] 
    
    # Tech
    
