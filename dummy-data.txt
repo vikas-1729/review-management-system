@@ -1,0 +1,72 @@
+For creating review use 
+4 or 5 for customer id
+1 or 2 or 3 for product id 
+
+You not need to wrote whole id
+
+Customer data 
+
+#1.
+
+{"_id":{"$oid":"5f9c2b5594fcb10017abee84"},
+"name":"Vishal Singh",
+"email":"vika@gmail.com",
+"phone_no":"1234567892",
+"address":"h12 new panchwati",
+"createdAt":{"$date":{"$numberLong":"1604070229211"}},
+"updatedAt":{"$date":{"$numberLong":"1604070229211"}},
+"__v":{"$numberInt":"0"}
+}
+
+#2.
+{"_id":{"$oid":"5f9c2b5594fcb10017abee85"},
+"name":"Vkas Singh",
+"email":"vka@gmail.com",
+"phone_no":"1234567882",
+"address":"h12 new panchwati",
+"createdAt":{"$date":{"$numberLong":"1604070229211"}},
+"updatedAt":{"$date":{"$numberLong":"1604070229211"}},
+"__v":{"$numberInt":"0"}
+}
+
+Product data
+
+#1
+
+{"_id":{"$oid":"5f9c2b5594fcb10017abee81"},
+"name":"iphone",
+"description":{"height":{"$numberInt":"20"},
+"max_price":{"$numberInt":"800"},
+"licesnse":{"$numberInt":"200"}},
+"price":{"$numberInt":"230"},
+"createdAt":{"$date":{"$numberLong":"1572447829211"}},
+"updatedAt":{"$date":{"$numberLong":"1572447829211"}},
+"__v":{"$numberInt":"0"}
+}
+
+#2
+
+{"_id":{"$oid":"5f9c2b5594fcb10017abee82"},
+"name":"samsung",
+"description":{"height":{"$numberInt":"20"},
+"max_price":{"$numberInt":"800"},
+"licesnse":{"$numberInt":"200"}},
+"price":{"$numberInt":"230"},
+"createdAt":{"$date":{"$numberLong":"1572447829211"}},
+"updatedAt":{"$date":{"$numberLong":"1572447829211"}},
+"__v":{"$numberInt":"0"}
+}
+
+#3
+
+{"_id":{"$oid":"5f9c2b5594fcb10017abee83"},
+"name":"hair-dry",
+"description":{"height":{"$numberInt":"20"},
+"max_price":{"$numberInt":"800"},
+"licesnse":{"$numberInt":"200"}},
+"price":{"$numberInt":"230"},
+"createdAt":{"$date":{"$numberLong":"1572447829211"}},
+"updatedAt":{"$date":{"$numberLong":"1572447829211"}},
+"__v":{"$numberInt":"0"}
+}
+
