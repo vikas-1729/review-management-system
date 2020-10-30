@@ -131,3 +131,32 @@ module.exports.user = async function (req, res) {
     });
   }
 };
+
+
+module.exports.fetch = async function (req, res) {
+  // read all review
+  try {
+      if(req.body.page<1){
+        req.body.page=1;
+      }
+
+    let review = await reviewModel
+      .find({status:'approved'})
+      .populate('product_id') // populate the product
+      .populate('customer_id')
+      .sort({'updatedAt':-1})
+      .skip((req.body.page-1)*5)
+      .limit(5); // populate the customer
+      
+    return res.status(200).json({
+      success: true,
+      message: 'fetch data sucessfully',
+      data: review,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error,
+    });
+  }
+};

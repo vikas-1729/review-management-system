@@ -18,9 +18,15 @@ const ReviewSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: 'customer',
     },
-    info: {
-      type: Object,
+    star:{
+      type:Number,
+      min:1,
+      max:5
     },
+    comment:{
+      type:Number
+    },
+    
     status: {
       type: String,
       enum: ['rejected', 'approved', 'pending'],

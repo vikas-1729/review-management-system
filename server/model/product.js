@@ -7,7 +7,7 @@ const ProductSchema = new mongoose.Schema(
       required: true,
     },
     description: {
-      type: Object,
+      type:mongoose.Schema.Types.Mixed,
       required: true,
     },
     price: {
