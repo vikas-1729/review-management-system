@@ -52,14 +52,22 @@ Live at [https://review-management-cbbc5.web.app/](https://review-management-cbb
    There are basically two urls one for 
    1. see the approved review [https://review-management-cbbc5.web.app/] here i use paginated so that our api don't taake too long to fetch the data it fetch 5 reviews at a time
    2. create review [https://review-management-cbbc5.web.app/create_review] this is a post request use to create review for dummy purpose customer and product data are given Here (/info) file
+   ## point to note you use 1,2,3 as product id and 4,5 as customer id during creating form
    
    # Backend
    
    1. we can divide the url in two part 
    * create review [https://review-management-system.herokuapp.com/api/v1/review_create] A post request to create review  
-   * give approval to review [https://review-management-system.herokuapp.com/api/v1/review_approval] review_approval it is a get request with two parameter _id and status _id is which review and status to know it is approved or not  
+   * give approval to review [https://review-management-system.herokuapp.com/api/v1/review_approval] review_approval it is a get request with two parameter _id and status _id is    which review and status to know it is approved or not  
    * read review 
-   1 you will get all read review url in [https://github.com/vikas-1729/review-management-system/blob/master/server/router/api/v1/read.js] 
+   * you will get all read review url in [https://github.com/vikas-1729/review-management-system/blob/master/server/router/api/v1/read.js] 
+     1. read all review [https://review-management-system.herokuapp.com/api/v1/read/review/all]
+     2. read all approved review [https://review-management-system.herokuapp.com/api/v1/read/review/status/approved]
+     3. read all rejected review [https://review-management-system.herokuapp.com/api/v1/read/review/status/rejected]
+     4. read all pending review [https://review-management-system.herokuapp.com/api/v1/read/review/status/pending]
+     5. read review of specific product [https://review-management-system.herokuapp.com/api/v1/read/review/product/5f9c2b5594fcb10017abee82]
+     6. read review by specific user [[https://review-management-system.herokuapp.com/api/v1/read/review/user/5f9c2b5594fcb10017abee84]
+     
    
    # Tech
    
