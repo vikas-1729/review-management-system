@@ -136,6 +136,7 @@ module.exports.user = async function (req, res) {
 module.exports.fetch = async function (req, res) {
   // read all review
   try {
+    
       if(req.body.page<1){
         req.body.page=1;
       }
@@ -160,3 +161,4 @@ module.exports.fetch = async function (req, res) {
     });
   }
 };
+

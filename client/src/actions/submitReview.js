@@ -11,7 +11,7 @@ export function clearAll() {
     type: CLEAR_ALL,
   };
 }
-
+const base_value_obj = '5f9c2b5594fcb10017abee8';
 export function submitReviewStart() {
   console.log('doing good');
   return {
@@ -45,8 +45,8 @@ export function submitReviewFunction(
     let obj = {
       title: title,
       content: content,
-      product_id: product_id,
-      customer_id: customer_id,
+      product_id: base_value_obj + product_id,
+      customer_id: base_value_obj + customer_id,
       status: 'pending',
       star: star,
       comment: getRandomInt(10),
@@ -76,3 +76,4 @@ function getRandomInt(max) {
 
 //5f9921eb4e3aea0328d62646
 //5f9921eb4e3aea0328d62645
+//https://git.heroku.com/review-system-backend.git

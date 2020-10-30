@@ -4,7 +4,7 @@ class ReviewListItem extends Component {
   render() {
     const { review } = this.props;
     const { customer_id: customer } = review;
-    //console.log('review', review.info);
+
     let reviewInfo = {
       star: review.star,
       comment: review.comment,
@@ -24,7 +24,7 @@ class ReviewListItem extends Component {
       'Nov',
       'Dec',
     ];
-    console.log(date1);
+
     let startArray = [];
     for (let i = 0; i < reviewInfo.star; i++) {
       startArray.push(

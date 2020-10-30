@@ -31,14 +31,11 @@ function CreateReview({ submitReview, dispatch }) {
   const product_id = UserFormInput('');
   const star = UserFormInput('');
   const submitForm = submitReview;
-  // console.log(dispatch, submitForm);
-
   const { inProgress, success, error } = submitForm;
 
   return (
     <form className="review-form">
       <span className="review-header">Review Form</span>
-      {/* {error && <span className="alert error-dailog">{error}</span>} */}
       <div className="field">
         <input type="title" placeholder="Title" required {...title} />
       </div>
@@ -68,21 +65,30 @@ function CreateReview({ submitReview, dispatch }) {
       </div>
       <div className="field">
         {inProgress ? (
-          <button>Creating...</button>
+          <button disabled>Creating...</button>
         ) : (
           <button
             onClick={(e) => {
               e.preventDefault();
-              console.log('okk i am doing');
-              dispatch(
-                submitReviewFunction(
-                  title.value,
-                  content.value,
-                  product_id.value,
-                  customer_id.value,
-                  star.value
-                )
-              );
+              if (
+                title.value &&
+                content.value &&
+                product_id.value &&
+                customer_id.value &&
+                star.value
+              ) {
+                dispatch(
+                  submitReviewFunction(
+                    title.value,
+                    content.value,
+                    product_id.value,
+                    customer_id.value,
+                    star.value
+                  )
+                );
+              } else {
+                window.alert('please fill all the fields');
+              }
             }}
           >
             Create Review
@@ -95,7 +101,6 @@ function CreateReview({ submitReview, dispatch }) {
   );
 }
 function mapToState(state) {
-  console.log('okk 1');
   return {
     submitReview: state.submitReview,
   };

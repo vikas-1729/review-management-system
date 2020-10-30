@@ -6,8 +6,14 @@ module.exports.review_create = async function (req, res) {
   // first find out that customer and product exist
 
   try {
+    if(checkId(req.body.customer_id)==false||checkId(req.body.product_id)==false){
+      return res.status(406).json({
+        success: false,
+        message: 'wrong customer or product id',
+      });
+    }
     let customer = await customerModel.findOne({ _id: req.body.customer_id });
-    console.log('customer', customer);
+    
     if (!customer) {
       return res.status(406).json({
         success: false,
@@ -67,3 +73,8 @@ module.exports.review_approval = async function (req, res) {
     });
   }
 };
+
+function checkId(id){
+ return id.length==24
+ 
+}

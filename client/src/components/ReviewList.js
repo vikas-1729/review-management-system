@@ -17,11 +17,10 @@ class ReviewList extends Component {
   render() {
     const { data } = this.props;
     const { pageCurrent } = this.state;
-    console.log('data', data);
     const { list, inProgress } = data;
 
     if (inProgress) {
-      return <div>Loading ...</div>;
+      return <h1 className="loading">Loading ...</h1>;
     }
     let reviewList = [];
 
@@ -33,7 +32,6 @@ class ReviewList extends Component {
       reviewList[i] = list[i];
     }
 
-    console.log('okk', reviewList.length, list.length);
     return (
       <div className="review-container">
         {reviewList.map((review) => {

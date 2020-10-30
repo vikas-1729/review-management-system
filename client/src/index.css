@@ -294,3 +294,8 @@ textarea:focus {
   min-height: 40px;
   margin: 20px 0;
 }
+
+.loading {
+  text-align: center;
+  word-spacing: 15px;
+}
