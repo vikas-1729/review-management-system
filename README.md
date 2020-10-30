@@ -1,7 +1,7 @@
  # Review Managment System:
- ![alt text][s1]
+ ![alt text](https://github.com/vikas-1729/review-management-system/blob/master/screenshots/img1.png)
 
-[s1]: https://github.com/vikas-1729/review-management-system/screenshots/img1.png
+
 
 Live at [https://review-management-cbbc5.web.app/](https://review-management-cbbc5.web.app/)
 
@@ -21,14 +21,10 @@ Live at [https://review-management-cbbc5.web.app/](https://review-management-cbb
   
   It is a review assignment project where you can see a review
   
-  ![alt text][img2]
-  
-  [img2]: https://github.com/vikas-1729/review-management-system/screenshots/img2.png"
-  
   create a review 
-  ![alt text][img3]
   
-  [img3]: https://github.com/vikas-1729/review-management-system/screenshots/img3.png"
+ ![alt text](https://github.com/vikas-1729/review-management-system/blob/master/screenshots/img3.png)
+  
   
   It is show you all accepted review so help you to know the feedback of your business
   
