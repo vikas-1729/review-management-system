@@ -45,7 +45,6 @@ export function fetchReview(page = 1) {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('data', data);
         if (data.success) {
           if (page === 1) {
             dispatch(fetchSuccess(data.data));
@@ -56,6 +55,9 @@ export function fetchReview(page = 1) {
         }
         dispatch(fetchError(data.message));
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        dispatch(fetchError(err));
+        return;
+      });
   };
 }

@@ -55,7 +55,7 @@ module.exports.review_approval = async function (req, res) {
     }
     if (req.query.approved == 'true') {
       // if review approved
-      console.log('okk', review.status);
+    
       review.status = 'approved';
     } else if (req.query.approved == 'false') {
       // if review not approved

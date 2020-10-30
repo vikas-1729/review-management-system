@@ -8,4 +8,10 @@ router.post('/review_create', homeController.review_create);
 router.get('/review_approval', homeController.review_approval);
 router.use('/read/review', require('./read'));
 
+router.all('/',function(req,res){
+	return res.status(404).json({
+		success:false,
+		message:"page not found"
+	})
+});
 module.exports = router;
