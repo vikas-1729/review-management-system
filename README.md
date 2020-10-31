@@ -58,7 +58,7 @@ Live at [https://review-management-cbbc5.web.app/](https://review-management-cbb
    
    1. we can divide the url in two part 
    * create review [https://review-management-system.herokuapp.com/api/v1/review_create] A post request to create review  
-   * give approval to review [https://review-management-system.herokuapp.com/api/v1/review_approval?_id=/5f9c2b5594fcb10017abee82&approved=true] review_approval it is a get request with two parameter _id and approved approved has two value true or false   _id is    which review and status to know it is approved or not  
+   * give approval to review [https://review-management-system.herokuapp.com/api/v1/review_approval?_id=5f9c366df2e73e0017709638&approved=true] review_approval it is a get request with two parameter _id and approved approved has two value true or false   _id is    which review and status to know it is approved or not  
    * read review 
    * you will get all read review url in [https://github.com/vikas-1729/review-management-system/blob/master/server/router/api/v1/read.js] 
      1. read all review [https://review-management-system.herokuapp.com/api/v1/read/review/all]
