@@ -31,7 +31,7 @@ class ReviewListItem extends Component {
         <img
           height="30"
           width="30"
-          src="https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg"
+          src="/assest/images/star.png"
           alt="start"
           key={i}
         />
@@ -42,7 +42,7 @@ class ReviewListItem extends Component {
         <img
           height="30"
           width="30"
-          src="https://www.flaticon.com/svg/static/icons/svg/1828/1828970.svg"
+          src="/assest/images/star-blank.png"
           alt="not -color"
           key={i}
         />
@@ -58,7 +58,7 @@ class ReviewListItem extends Component {
                 <img
                   height="50"
                   width="50"
-                  src="https://www.flaticon.com/svg/static/icons/svg/742/742751.svg"
+                  src="/assest/images/smile.png"
                   alt="smile"
                 />
               </div>
@@ -67,7 +67,7 @@ class ReviewListItem extends Component {
                 <img
                   height="50"
                   width="50"
-                  src="https://www.flaticon.com/svg/static/icons/svg/725/725099.svg"
+                  src="/assest/images/sad.png"
                   alt="smile"
                 />
               </div>
@@ -89,7 +89,7 @@ class ReviewListItem extends Component {
                 <img
                   height="30"
                   width="30"
-                  src="https://www.flaticon.com/svg/static/icons/svg/149/149071.svg"
+                  src="/assest/images/user.png"
                   alt="avatar"
                 />
               </div>
@@ -116,7 +116,7 @@ class ReviewListItem extends Component {
                 <img
                   height="30"
                   width="30"
-                  src="https://www.flaticon.com/svg/static/icons/svg/1380/1380338.svg"
+                  src="/assest/images/comment1.png"
                   alt="product"
                 />
               </div>
