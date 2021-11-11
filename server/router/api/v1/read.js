@@ -8,11 +8,6 @@ router.post('/fetch', readController.fetch); //fetch review for api
 router.get('/status/:value', readController.status); // read review by status i.e approved or rejected
 router.get('/product/:id', readController.product); //read by product id
 router.get('/user/:id', readController.user); //read by user id
-router.all('/',function(req,res){
-	return res.status(404).json({
-		success:false,
-		message:"page not found"
-	})
-});
+
 module.exports = router;
 

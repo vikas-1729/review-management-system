@@ -7,11 +7,7 @@ class Navbar extends Component {
       <div>
         <nav className="nav">
           <div className="left-div">
-            <img
-              className="logo"
-              src="https://www.flaticon.com/svg/static/icons/svg/2983/2983705.svg"
-              alt="logo"
-            />
+            <img className="logo" src="/assest/images/logo.png" alt="logo" />
           </div>
           <div className="middle-div">
             <span>Review managment System</span>
